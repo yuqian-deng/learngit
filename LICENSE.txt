@@ -69,4 +69,11 @@ $ git merge --no-ff -m 'merge with no-ff' dev
 
 # bug branch
 $ git stash
+$ git stash list
+$ git stash apply
+$ git stash drop
+$ git stash pop
+$ git stash apply stash@{0}
+$ git cherry-pick <commit id>
+
 
