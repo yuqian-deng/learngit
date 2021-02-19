@@ -76,7 +76,7 @@ $ git stash pop
 $ git stash apply stash@{0}
 $ git cherry-pick <commit id>
 
-#Colllab
+#Collab
 $ git remote -v
 1. $ git push origin <branch-name> ##push my changes
 2. $ git pull ##if push fails, try merge with git pull
