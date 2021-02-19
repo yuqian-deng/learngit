@@ -83,4 +83,3 @@ $ git remote -v
 3. $ git branch --set-upstream-to=origin/dev dev ##if hints no tracking info, create link between local dev and remote dev
 4. $ if fail to merge, fix the conflict and commit locally
 5. $ git push origin <branch-name> ##after conflict is fixed push again
-
