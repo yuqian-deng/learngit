@@ -1,0 +1,79 @@
+#installing git
+$ git config --global user.name 'Yuqian Deng'
+$ git config --global user.email 'yuqian.deng@outlook.com'
+
+#Create local repository
+$ mkdir leangit
+$ cd learngit
+$ pwd
+$ git init
+$ git add <file>
+$ git commit -m <'message'>
+
+#Working directory status
+$ git status
+$ git diff
+
+#Log
+$ git log
+$ git log --pretty=oneline
+
+#Return to last version
+$ git reset --hard HEAD^
+$ git reset --hard <commit id>
+$ git reflog
+
+#Repository = stage + master
+
+#Discard changes in working directory/Using version in the repo to replace version in working directory
+$ git checkout -- <file name>
+
+#Unstage
+$ git reset HEAD <file name>
+
+#Delete files
+$ git rm
+$ git commit
+
+#SSH for safe transmission between local git and github
+$ ssh-keygen -t rsa -C 'yuqian.deng@outlook.com'
+id_rsa.pub
+
+#Add remote repo
+$ git remote add origin git@github.com:yuqian-deng/<>.git
+
+#Push local repo to remote repo
+$ git push -u origin master
+$ git push origin master
+
+#Clone from the remote repo
+$ git clone git@github.com:yuqian-deng/<>.git
+
+#Create and merge branches
+$ git checkout -b dev
+$ git branch dev
+$ git checkout dev
+$ git branch
+$ git merge dev
+$ git branch -d dev
+(under new version of git)
+$ git switch -c dev
+$ git switch master
+Git encourages the usage of branches
+
+#manually change and solve the conflict
+$ git log --graph --pretty=oneline --abbrev-commit
+
+#--no-ff prohibits Fast forward
+$ git merge --no-ff -m 'merge with no-ff' dev
+
+# bug branch
+$ git stash
+$ git stash list
+$ git stash apply
+$ git stash drop
+$ git stash pop
+$ git stash apply stash@{0}
+$ git cherry-pick <commit id>
+
+
